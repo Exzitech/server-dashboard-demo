@@ -5,7 +5,7 @@
 Infrastructure monitoring dashboard demo, using simulated data.
 Service tracking interface: status, metrics, history, incidents.
 
-**Live demo:** [Vercel link]
+**Live demo:** [DemoDashboard](https://server-dashboard-demo.vercel.app/)
 **Stack:** React, TypeScript, Vite, Tailwind, Recharts
 
 ## Français
@@ -13,7 +13,7 @@ Service tracking interface: status, metrics, history, incidents.
 Démo de dashboard de supervision d'infrastructure, à données simulées.
 Interface de suivi de services : statuts, métriques, historique, incidents.
 
-**Démo en ligne :** [lien Vercel]
+**Démo en ligne :** [DemoDashboard](https://server-dashboard-demo.vercel.app/)
 **Stack :** React, TypeScript, Vite, Tailwind, Recharts
 
 ## Nederlands
@@ -21,6 +21,6 @@ Interface de suivi de services : statuts, métriques, historique, incidents.
 Demo van een infrastructuurmonitoring dashboard, met gesimuleerde data.
 Interface voor het opvolgen van services: status, metrics, historiek, incidenten.
 
-**Live demo:** [Vercel link]
+**Live demo:** [DemoDashboard](https://server-dashboard-demo.vercel.app/)
 **Stack:** React, TypeScript, Vite, Tailwind, Recharts
 
