@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+/*
+ * Thème sombre unique : la démo ne propose pas de bascule clair/sombre.
+ * Aplats uniquement, aucun dégradé.
+ */
+@theme {
+  /* Fond et surfaces */
+  --color-base: #0b0e14;
+  --color-surface: #151a23;
+  --color-surface-hover: #1b2130;
+  --color-line: #232a36;
+  --color-line-strong: #2e3746;
+
+  /* Texte */
+  --color-fg: #e6eaf0;
+  --color-muted: #8a94a6;
+  --color-faint: #5c6675;
+
+  /* Statuts */
+  --color-ok: #3fb950;
+  --color-warn: #d29922;
+  --color-crit: #f85149;
+  --color-info: #58a6ff;
+
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-mono:
+    ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  /* Échelle resserrée : la densité est l'argument de vente. */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    /* Le tableau de services défile horizontalement dans son propre conteneur,
+       jamais la page. */
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* v4 rend les bordures en currentColor par défaut : on rétablit une teinte. */
+  *,
+  ::after,
+  ::before {
+    border-color: var(--color-line);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-info);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  /* Chiffres alignés en colonne dans le tableau : sans ça, les valeurs
+     dansent d'un tick à l'autre. */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
